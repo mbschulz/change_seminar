@@ -112,42 +112,32 @@ div.content {
    
    
    
-/* Timetable */
-table.timetable {
-    width: 90%;
-    margin: 20px auto;
+table {
+    width: 100%;
     border-collapse: collapse;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-table.timetable th,
-table.timetable td {
-    padding: 12px;
+    margin: 20px 0;
     text-align: left;
-    border: 1px solid #ddd;
+    box-shadow: 0 12px 12px #cccccc; /* Add a soft shadow */ 
 }
 
-table.timetable th {
-    background-color: #6200ea;
-    color: white;
-    text-transform: uppercase;
+table td:first-child {
+    width: 100px;  /* Adjust as needed to fit time */
+    white-space: nowrap;  /* Prevent text wrapping */
 }
 
-table.timetable tr:nth-child(even) {
-    background-color: #f9f9f9;
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #4d4d4d;
 }
 
-table.timetable tr:hover {
-    background-color: #f1f1f1;
+tr {
+    background-color: #fafafa;
 }
 
-table.timetable a {
-    color: #6200ea;
-    text-decoration: none;
-}
-
-table.timetable a:hover {
-    text-decoration: underline;
-}   
+tr.day-header {
+    background-color: #cccccc;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+} 
 
