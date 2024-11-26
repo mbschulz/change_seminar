@@ -88,6 +88,24 @@ div.content {
     float: none;}  
 }
   
+  
+   
+
+.seminar {
+    font-style: italic; /* Italicize the word 'Seminar' */
+	font-weight: normal; 
+	font-size: 1.33em;  /* Smaller size for the tagline */
+}
+
+.tagline {
+    font-size: 0.52em;  /* Smaller size for the tagline */
+    font-weight: bold; 
+    display: block;  /* Ensure it is on a new line */
+    margin-top: 1px;  /* Space between title and tagline */
+}
+  
+  
+  
 
 .reference-list {
     list-style-type: none;
