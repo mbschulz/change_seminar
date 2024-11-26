@@ -1,0 +1,153 @@
+/* GENERAL */
+ 
+html,body,h1,h2,h3,h4,h5,h6 {font-family: Helvetica, sans-serif;}
+
+body {
+  font-size: x-large;
+  background-color: #f2f2f2;
+}
+
+.footer {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 45px;
+}
+
+ /* The side navigation menu */
+.sidebar {
+  margin: 0px;
+  width: 216px;
+  background-color: #cccccc;
+  position: fixed;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* Sidebar links */
+.sidebar a, .sidebar .copyright {
+  display: block;
+  font-size: large;
+  text-decoration: none;
+}
+
+.sidebar a {
+  color: black;
+  padding: 10px 6px; /* button margins */
+  border: 4px outset #e6e6e6;
+}
+
+.sidebar .copyright {
+  padding: 16px;
+  position: relative;
+  bottom: 0px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #737373;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 5px 36px;
+  height: 100%;
+}
+
+/* On screens that are less than ???px wide, make the sidebar into a topbar (update: does not happen, jump right to next case) */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+  .sidebar .copyright {
+    position: relative;
+    float: right;
+   }  
+}
+
+/* On screens that are less than ???px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 700px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .sidebar .copyright {
+    text-align: center;
+    float: none;}  
+}
+  
+
+.reference-list {
+    list-style-type: none;
+    counter-reset: reference-counter;
+    padding-left: 1em;		
+    }
+.reference-list li {
+    margin: 5px 0;
+}	
+.reference-list li::before {
+    content: '[' counter(reference-counter) '] ';
+    counter-increment: reference-counter;
+	padding-right: .5em; 
+}    
+ 
+ 
+.publication-list {
+    }
+.publication-list li {
+    margin: 14px 0;
+}	 
+   
+   
+   
+/* Timetable */
+table.timetable {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table.timetable th,
+table.timetable td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table.timetable th {
+    background-color: #6200ea;
+    color: white;
+    text-transform: uppercase;
+}
+
+table.timetable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.timetable tr:hover {
+    background-color: #f1f1f1;
+}
+
+table.timetable a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+table.timetable a:hover {
+    text-decoration: underline;
+}   
+
