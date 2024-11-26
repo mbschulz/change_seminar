@@ -95,6 +95,7 @@ div.content {
     font-style: italic; /* Italicize the word 'Seminar' */
 	font-weight: normal; 
 	font-size: 1.33em;  /* Smaller size for the tagline */
+	color: #4d4d4d;
 }
 
 .tagline {
