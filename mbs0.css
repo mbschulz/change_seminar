@@ -110,7 +110,7 @@ div.content {
 
 .reference-list {
     list-style-type: none;
-    counter-reset: reference-counter -1;
+    counter-reset: reference-counter;
     padding-left: 1em;		
     }
 .reference-list li {
